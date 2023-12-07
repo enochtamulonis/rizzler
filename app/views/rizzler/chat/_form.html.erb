@@ -1,0 +1,6 @@
+<%= form_with url: rizzler_chat_answers_path, data: { turbo_frame: "chat" } do |f| %>
+  <%= f.text_area :text, class: "block w-full bg-gray-500 text-gray-100", style: "resize: none;", data: { controller: "auto-adjust", action: "auto-adjust#adjust" },
+      placeholder: "Enter your questions here" %>
+  <br/>
+  <%= f.submit "Ask Rizzler", class: "bg-indigo-500 text-indigo-100 p-3 rounded-lg cursor-pointer" %>
+<% end %>

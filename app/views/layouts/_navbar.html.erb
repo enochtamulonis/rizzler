@@ -1,0 +1,11 @@
+<div class="w-full h-16 bg-gray-800 flex items-center justify-between px-8"> 
+  <%= link_to "/", class: "text-gray-100 text-2xl" do %>
+    <div class="flex items-center gap-2">
+      <span>The Rizzler</span>
+      <%= image_tag "charm.png", class: "h-10 invert" %>
+    </div>
+  <% end %>
+  <div class="flex">
+    <%= link_to "Sign out", destroy_user_session_path, class: "bg-gray-600 text-gray-100 p-2 rounded-lg", data: { turbo_method: :delete } %>
+  </div>
+</div>

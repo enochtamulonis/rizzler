@@ -1,0 +1,19 @@
+<div class="bg-gradient-to-b from-indigo-500 via-indigo-400 to-pink-500 min-h-[150vh] flex flex-col items-center gap-2 pt-32">
+  <%= image_tag "charm.png", class: "h-56 fill-indigo-900" %>
+  <h1 class="text-6xl text-indigo-100 text-center"> The Rizzler </h1>
+
+  <h2 class="text-2xl text-gray-100 mt-20 border-b border-gray-100"> How can I assist you?</h2>
+  <div class="grid grid-cols-4 gap-8 w-full max-w-5xl mt-6">
+    <a href="<%= rizzler_chat_path %>" class="w-full bg-indigo-500 hover:bg-indigo-600 rounded-lg text-indigo-100 h-56 text-3xl flex items-center justify-center text-center transition duration-250"> 
+      Assist with a date
+    </a>
+
+    <a href="<%= pickup_lines_path %>" class="w-full bg-indigo-500 hover:bg-indigo-600 rounded-lg text-indigo-100 h-56 text-3xl flex items-center justify-center text-center transition duration-250"> 
+      Pick up lines
+    </a>
+
+    <a href="<%= rizzler_rescue_path %>" class="w-full bg-indigo-500 hover:bg-indigo-600 rounded-lg text-indigo-100 h-56 text-3xl flex items-center justify-center text-center transition duration-250"> 
+      Uno Reverse
+    </a>
+  </div>
+</div>
